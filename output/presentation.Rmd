@@ -35,7 +35,7 @@ output: ioslides_presentation
 - I took extra care in cleaning the data to make sure that punctuation, non-english words and other disruptive elements from word input is cleaned. 
 
 
-## Areas of improvement 
+## Rooms for improvement 
 
 - I'm still new to R so I acknowledge some limitations to my current model. 
 
