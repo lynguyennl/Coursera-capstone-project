@@ -1,0 +1,47 @@
+---
+title: "Capstone Presentation"
+author: "Ly Nguyen"
+date: "10/24/2020"
+output: ioslides_presentation
+---
+
+## Introduction 
+
+- This presentation is done as part of the Coursera Data Science Specialization's Capstone Project by Johns Hopkins University, in collaboration with SwiftKey.  
+
+- The capstone project tasks students with building a text predictive model based on 3 given data sets from blogs, news & twitter, and showcasing this model via a shiny web app. 
+
+- This presentation aims to explain how my app and text predictive model works. 
+
+## How does the app work?
+
+- The user needs to key in a phrase / or a word in a the box given on the side panel of the app. The app will display the 3 most likely guesses for the next work, based on my predictive model.
+
+- Besides, user can also take a look at the N-gram plots, to see how the apps used available n-grams from the data sets to predict the next word from user's input. 
+
+- You can find my shiny web app here: [Shiny App](https://lynguyen.shinyapps.io/capstone_predictapp/)
+
+- The source codes here: [Source Code](https://github.com/lynguyennl/Coursera-Capstone-Project-/)
+
+- Links to the data sets here: [Data Sets](https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip)
+
+- I referenced Ms. Nethika's work heavily for this assignment, please find her original work here: [Nethika Suraweera's capstone](https://github.com/Nethika/shiny_app_next_word_prediction)
+
+
+## Strengths 
+
+- The app makes use of n-gram model and back-off model to produce a relatively accurate model. Both of these models are commonly used in Natural Language Processing application. 
+
+- I took extra care in cleaning the data to make sure that punctuation, non-english words and other disruptive elements from word input is cleaned. 
+
+
+## Rooms for improvement 
+
+- I'm still new to R so I acknowledge some limitations to my current model. 
+
+- It is less of a predictive model than a matching model in which the next words from user's input is matched with the available n-grams in the sampled data sets. To improve on this model, I need to explore Smoothing techniques to take into account n-grams that do not appear in my sampled data, because the sampled data is extremely limited. 
+
+- Accuracy tests (perplexity, accuracy) are not conducted on training and testing data sets for this model. To improve, I will need to find a way to incorporate training and testing sets into my model. 
+
+- My computer's power is low, I can only sample 1% of the given data sets. To improve the model, a larger sample size should be drawn.
+
